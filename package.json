@@ -2,15 +2,17 @@
   "name": "open-ve-typescript-sdk",
   "version": "1.0.2",
   "description": "Client SDK for Open-VE",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "src/**/*",
-    "dist/**/*.d.ts"
+    "dist",
+    "src"
   ],
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "versionup": "npm version patch && git push --follow-tags",
+    "publish": "cp package.json dist/ && cd dist && npm publish --access public && cd .."
   },
   "keywords": [],
   "author": "",
