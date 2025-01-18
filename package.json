@@ -1,6 +1,6 @@
 {
   "name": "open-ve-typescript-sdk",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Client SDK for Open-VE",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
