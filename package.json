@@ -1,14 +1,16 @@
 {
   "name": "open-ve-typescript-sdk",
   "version": "1.0.1",
-  "description": "",
-  "main": "dist/index.js",
+  "description": "Client SDK for Open-VE",
+  "main": "src/index.ts",
   "types": "dist/index.d.ts",
   "files": [
-    "dist/**/*"
+    "src/**/*",
+    "dist/**/*.d.ts"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "keywords": [],
   "author": "",
