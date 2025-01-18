@@ -5,14 +5,12 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist/**/*"
   ],
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
-    "versionup": "npm version patch && git push --follow-tags",
-    "publish": "cp package.json ./dist/ && cd dist && npm publish --access public && cd .."
+    "publish": "npm version patch && git push --follow-tags && npm publish --access public"
   },
   "keywords": [],
   "author": "",
