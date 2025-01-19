@@ -1,0 +1,27 @@
+{
+  "name": "open-ve-typescript-sdk",
+  "version": "1.0.24",
+  "description": "TypeScript SDK for Open-VE",
+  "author": "shibukazu",
+  "keywords": [
+    "open-ve",
+    "validation"
+  ],
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --outDir dist/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:shibukazu/open-ve-typescript-sdk.git"
+  },
+  "homepage": "https://open-ve-document.vercel.app/",
+  "publishConfig": {
+    "access": "public"
+  }
+}
